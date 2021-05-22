@@ -67,13 +67,15 @@ const LeftButton = styled.div`
     color: white;
     display: flex;
     justify-content: center;
-    align-item: center;
+    align-items: center;
     border-radius: 100px;
     opacity: 0.85;
     text-transform: uppercase;
     font-size: 12px;
     cursor: pointer;
-    margin: 8px
+    margin: 8px;
+
+ 
 `
 
 const RightButton = styled(LeftButton)`
