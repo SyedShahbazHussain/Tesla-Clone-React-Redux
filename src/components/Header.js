@@ -17,15 +17,15 @@ function Header() {
             </a>
             <Menu>
                 {cars && cars.map((car, index) => 
-                    <a key={index}>{car}</a>
+                    <a href="replace" key={index}>{car}</a>
                 )}
 
             </Menu>
 
             <RightMenu>
                 <CustomMenu onClick={() => setBurgerStatus(true)} />
-                <a href="#">Shop</a>
-                <a href="#">Tesla Account</a>
+                <a href="replace">Shop</a>
+                <a href="replace">Tesla Account</a>
             </RightMenu>
 
             <BurgerNav show={burgerStatus}>
@@ -33,13 +33,13 @@ function Header() {
                     <CustomColse />
                 </CloseWrapper>
                 {cars && cars.map((car, index) => 
-                    <li key={index}><a href="#">{car}</a></li>
+                    <li key={index}><a href="replace">{car}</a></li>
                 )}
-                <li><a href="#">Existing Inventory</a></li>
-                <li><a href="#">Used Inventory</a></li>
-                <li><a href="#">Trade-in</a></li>
-                <li><a href="#">Cybertruck</a></li>
-                <li><a href="#">RoadSter</a></li>
+                <li><a href="replace">Existing Inventory</a></li>
+                <li><a href="replace">Used Inventory</a></li>
+                <li><a href="replace">Trade-in</a></li>
+                <li><a href="replace">Cybertruck</a></li>
+                <li><a href="replace">RoadSter</a></li>
             </BurgerNav>
         </Container>
     )
