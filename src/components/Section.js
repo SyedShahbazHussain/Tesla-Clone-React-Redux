@@ -6,24 +6,23 @@ function Section({ title, description, leftBtnText, rightBtnText, backgroundImg 
     return (
         <Wrap bgImage={backgroundImg}>
             <Fade bottom>
-            <ItemText>
-                <h1>{title}</h1>
-                <p>{description}</p>
-            </ItemText>
+                <ItemText>
+                    <h1>{title}</h1>
+                    <p>{description}</p>
+                </ItemText>
             </Fade>
             <Buttons>
                 <Fade bottom>
-                <ButtonGroup>
-                    <LeftButton>
-                        {leftBtnText}
-                    </LeftButton>
-                    {rightBtnText &&
-                       <RightButton>
-                       {rightBtnText}
-                   </RightButton>
-                    }
-                 
-                </ButtonGroup>
+                    <ButtonGroup>
+                        <LeftButton>
+                            {leftBtnText}
+                        </LeftButton>
+                        {rightBtnText &&
+                            <RightButton>
+                                {rightBtnText}
+                            </RightButton>
+                        }
+                    </ButtonGroup>
                 </Fade>
                 <DownArrow src="/images/down-arrow.svg" />
             </Buttons>
@@ -49,6 +48,7 @@ const Wrap = styled.div`
 const ItemText = styled.div`
     padding-top: 15vh;
     text-align: center; 
+    z-index: -1;
 `
 
 
